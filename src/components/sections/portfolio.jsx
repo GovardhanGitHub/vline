@@ -178,26 +178,18 @@ export default Portfolio
 
 const VideoCard = ({ project, animationClass, openVideoModal }) => {
     const { id, category, title, youtubeId } = project;
-    
-    // Function to get YouTube thumbnail URL from video ID
+    // Use YouTube thumbnail for portfolio
     const getThumbnailUrl = (videoId) => {
-        // Return the high-quality thumbnail (hqdefault)
         return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-        
-        // Alternative options:
-        // Standard quality: return `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
-        // Maximum resolution: return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
     };
-    
     return (
         <div className={`col-lg-4 col-md-6 item ${category.toLowerCase()} ${animationClass}`}>
             <SlideUp delay={id}>
                 <div className="project-item style-two">
                     <div className="project-image">
-                        <Image 
+                        <img 
                             width={383} 
                             height={249} 
-                            sizes='100vw' 
                             style={{width:"100%", height:"auto"}} 
                             src={getThumbnailUrl(youtubeId)} 
                             alt={title} 
