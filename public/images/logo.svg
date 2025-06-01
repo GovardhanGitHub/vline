@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e" />
+      <stop offset="100%" stop-color="#16213e" />
+    </linearGradient>
+    
+    <!-- Glowing effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Line gradient -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4361ee" />
+      <stop offset="50%" stop-color="#3a0ca3" />
+      <stop offset="100%" stop-color="#7209b7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="100" fill="url(#bgGradient)" rx="10" ry="10" />
+  
+  <!-- Abstract lines with animation and glow -->
+  <path d="M30,60 C80,20 120,70 170,30 S240,60 270,40" 
+        stroke="url(#lineGradient)" 
+        stroke-width="3" 
+        fill="none" 
+        filter="url(#glow)" 
+        stroke-linecap="round" />
+        
+  <!-- Secondary line -->
+  <path d="M30,50 C70,30 120,55 170,40 S240,45 270,50" 
+        stroke="#4cc9f0" 
+        stroke-width="1.5" 
+        stroke-opacity="0.7"
+        fill="none" 
+        filter="url(#glow)" 
+        stroke-linecap="round" />
+  
+  <!-- Stylish dots along the line -->
+  <circle cx="30" cy="60" r="4" fill="#f72585" filter="url(#glow)" />
+  <circle cx="100" cy="40" r="4" fill="#7209b7" filter="url(#glow)" />
+  <circle cx="170" cy="30" r="4" fill="#3a0ca3" filter="url(#glow)" />
+  <circle cx="220" cy="50" r="4" fill="#4361ee" filter="url(#glow)" />
+  <circle cx="270" cy="40" r="4" fill="#4cc9f0" filter="url(#glow)" />
+  
+  <!-- VISUAL LINE text - Extra large -->
+  <text x="150" y="55" 
+        font-family="'Montserrat', sans-serif" 
+        font-size="30" 
+        font-weight="700" 
+        letter-spacing="1"
+        text-anchor="middle" 
+        fill="white"
+        filter="url(#glow)">VISUAL LINE</text>
+  
+  <!-- STUDIOS text at bottom -->
+  <text x="150" y="90" 
+        font-family="'Montserrat', sans-serif" 
+        font-size="16" 
+        font-weight="300" 
+        letter-spacing="8"
+        text-anchor="middle" 
+        fill="white"
+        filter="url(#glow)">STUDIOS</text>
+  
+  <!-- Stylized lens/aperture element -->
+  <g transform="translate(32, 32)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#f72585" stroke-width="1.5" />
+    <!-- Inner structure -->
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#4cc9f0" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="#7209b7" />
+    <circle cx="0" cy="0" r="2" fill="white" />
+    
+    <!-- Aperture blades -->
+    <path d="M0,0 L8,8" stroke="#f72585" stroke-width="0.8" />
+    <path d="M0,0 L-8,-8" stroke="#f72585" stroke-width="0.8" />
+    <path d="M0,0 L8,-8" stroke="#4cc9f0" stroke-width="0.8" />
+    <path d="M0,0 L-8,8" stroke="#4cc9f0" stroke-width="0.8" />
+  </g>
+  
+  <!-- Sparkles -->
+  <circle cx="250" cy="25" r="1" fill="white" opacity="0.8" />
+  <circle cx="260" cy="15" r="0.8" fill="white" opacity="0.6" />
+  <circle cx="240" cy="20" r="0.6" fill="white" opacity="0.7" />
+  <circle cx="50" cy="25" r="1" fill="white" opacity="0.8" />
+  <circle cx="60" cy="15" r="0.8" fill="white" opacity="0.6" />
+  <circle cx="40" cy="20" r="0.6" fill="white" opacity="0.7" />
+</svg>
