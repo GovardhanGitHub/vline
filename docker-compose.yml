@@ -3,7 +3,7 @@ services:
     container_name: nextjs-bun-app
     image: nextjs-bun-app
     build:
-      context: ../
+      context: .
       dockerfile: Dockerfile
     ports:
       - 31033:3000
