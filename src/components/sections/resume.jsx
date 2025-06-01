@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiBookLine } from '@remixicon/react'
+import { RiMovie2Line } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
 
 const Resume = () => {
@@ -8,30 +8,45 @@ const Resume = () => {
             <div className="container">
                 <div className="resume-items">
                     <div className="row">
-                        {/* <!-- START EXPERIENCE RESUME DESIGN AREA --> */}
-                        <div className="col-xl-6 col-md-6">
+                        <div className="col-xl-12 col-md-12">
                             <div className="single-resume">
-                                <h2>Experience</h2>
+                                <h2>What We Do</h2>
                                 <div className="experience-list">
-                                    <Card year={'2021 - Present'} title={'Web Designer'} institution={'Themeforest Market '} />
-                                    <Card year={'2021 - 2023'} title={'Marketing Expert GRP'} institution={'Envato Theme Developer'} />
-                                    <Card year={'2021 - 2022'} title={'Web Designer'} institution={'Web Developer & Business Partner'} />
+                                    <Card 
+                                        title={'Corporate Films & Brand Stories'} 
+                                        description={'Engaging videos that showcase your company’s vision, values, and achievements.'} 
+                                    />
+                                    <Card 
+                                        title={'Medical & Healthcare Content'} 
+                                        description={'Doctor insights, patient recovery stories, hospital commercials, and healthcare awareness.'} 
+                                    />
+                                    <Card 
+                                        title={'Jewellery & Fashion Ads'} 
+                                        description={'Stunning visuals for jewellery brands and fashion labels.'} 
+                                    />
+                                    <Card 
+                                        title={'Product Launch & Commercials'} 
+                                        description={'Creative product launches and ad campaigns for all industries.'} 
+                                    />
+                                    <Card 
+                                        title={'Movie Promos & Trailers'} 
+                                        description={'Cinematic promos and trailers for films and entertainment.'} 
+                                    />
+                                    <Card 
+                                        title={'Podcasts & Educational Videos'} 
+                                        description={'Professional podcast production and educational content.'} 
+                                    />
+                                    <Card 
+                                        title={'Live Event & Concert Coverage'} 
+                                        description={'Multi-camera coverage for music concerts and live events.'} 
+                                    />
+                                    <Card 
+                                        title={'Social Media Video Campaigns'} 
+                                        description={'Short-form, platform-optimized videos for YouTube, Instagram, and Facebook.'} 
+                                    />
                                 </div>
                             </div>
                         </div>
-                        {/* <!-- // END EXPERIENCE RESUME DESIGN AREA -->
-                        <!-- START EDUCATION RESUME DESIGN AREA --> */}
-                        <div className="col-xl-6 col-md-6">
-                            <div className="experience-list">
-                                <div className="single-resume">
-                                    <h2>Education</h2>
-                                    <Card year={'2013 - 2015'} title={'Bachelor Degree of Information Technology'} institution={'State University bangladesh'} />
-                                    <Card year={'2021 - 2024'} title={'Higher secoundery Education'} institution={'Premium College United VC'} />
-                                    <Card year={'2020 - 2021'} title={'UI/UX Design'} institution={'Webster College'} />
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!-- // END EDUCATION RESUME DESIGN AREA --> */}
                     </div>
                 </div>
             </div>
@@ -41,18 +56,16 @@ const Resume = () => {
 
 export default Resume
 
-
-const Card = ({ year, title, institution }) => {
+const Card = ({ title, description }) => {
     return (
         <SlideUp>
             <div className="resume-item">
                 <div className="icon">
-                    <RiBookLine />
+                    <RiMovie2Line />
                 </div>
                 <div className="content">
-                    <span className="years">{year}</span>
                     <h4>{title}</h4>
-                    <span className="company"> {institution} </span>
+                    <span className="company">{description}</span>
                 </div>
             </div>
         </SlideUp>

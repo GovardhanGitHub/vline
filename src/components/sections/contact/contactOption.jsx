@@ -12,8 +12,8 @@ const ContactOption = () => {
                             <div className="contact-icon">
                                 <i> <RiMapPinLine size={20} /></i>
                             </div>
-                            <h2>our office:</h2>
-                            <p>Jurain,Dhaka Bangladesh</p>
+                            <h2>Our Office:</h2>
+                            <p>Sahakara Nagar, Bengaluru, Karnataka</p>
                         </div>
                     </SlideUp>
                     <SlideUp delay={3}>
@@ -21,8 +21,8 @@ const ContactOption = () => {
                             <div className="contact-icon">
                                 <i> <RiPhoneLine size={20} /></i>
                             </div>
-                            <h2>contact number:</h2>
-                            <p>+1234321321</p>
+                            <h2>Contact Number:</h2>
+                            <p>+91 90718 55089</p>
                         </div>
                     </SlideUp>
                     <SlideUp delay={4}>
@@ -30,8 +30,8 @@ const ContactOption = () => {
                             <div className="contact-icon">
                                 <i> <RiMailLine size={20} /></i>
                             </div>
-                            <h2>Email us:</h2>
-                            <p>websitename@mail.com</p>
+                            <h2>Email Us:</h2>
+                            <p>vlsr2179@gmail.com<br/>administrator@visuallinestudios.com</p>
                         </div>
                     </SlideUp>
                 </div>

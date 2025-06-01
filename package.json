@@ -1,7 +1,20 @@
 {
-  "name": "bentos-next",
+  "name": "visual-line-studios",
   "version": "0.1.0",
   "private": true,
+  "description": "Visual Line Studios - Professional Video Production in Bengaluru for Hospitals, Jewellery, Product Launches, and Social Media.",
+  "keywords": [
+    "video production",
+    "Bengaluru",
+    "hospital video",
+    "doctor interview",
+    "jewellery ad",
+    "product launch",
+    "YouTube content",
+    "Instagram reels",
+    "corporate film",
+    "Visual Line Studios"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

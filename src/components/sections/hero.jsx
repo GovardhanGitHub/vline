@@ -14,9 +14,9 @@ const Hero = () => {
                     <div className="col-lg-4">
                         <SlideUp>
                             <div className="about-image-part">
-                                <img src={"/images/about/company-logo.png"} alt="Visual Line Studios" />
+                                <img src={"/images/main_photo_pic.jpg"} alt="Visual Line Studios" />
                                 <h2>Visual Line Studios</h2>
-                                <p>Award-winning video production & visual marketing agency.</p>
+                                <p className="fw-bold">Bengaluru’s Creative Video Production Studio</p>
                                 <div className="about-social text-center">
                                     <ul>
                                         <li><Link href=""><RiFacebookCircleFill size={20} /></Link></li>
@@ -33,28 +33,25 @@ const Hero = () => {
                     <div className="col-lg-8">
                         <SlideUp>
                             <div className="about-content-part">
-                                <p>Transform Your Story</p>
+                                <p className="text-primary mb-2">Professional Video Production for Every Brand</p>
                                 <h2>
-                                    We craft cinematic visuals that elevate your brand and connect with your audience.
+                                    Medical, Corporate, Jewellery, Product, Fashion, Podcasts & More
                                 </h2>
+                                <p>
+                                    From hospital ads and doctor interviews to jewellery commercials, product launches, corporate films, fashion promos, educational content, and live event coverage—Visual Line Studios brings your story to life. Our 4K videos are tailored for YouTube, Instagram, Facebook, and all digital platforms. <b>Boost your brand with cinematic storytelling, creative direction, and expert video marketing.</b>
+                                </p>
                                 <div className="adress-field">
                                     <ul className="service-icons">
-                                        <li className='d-flex align-items-center'><i><RiHospitalLine size={18} /></i> Healthcare Marketing</li>
-                                        <li className='d-flex align-items-center'><i><RiShoppingBagLine size={18} /></i> Product Launches</li>
-                                        <li className='d-flex align-items-center'><i><RiBriefcaseLine size={18} /></i> Business Introductions</li>
-                                        <li className='d-flex align-items-center'><i><RiMovie2Line size={18} /></i> Professional Ad Campaigns</li>
+                                        <li className='d-flex align-items-center'><i><RiHospitalLine size={18} /></i> Medical & Hospital Videos</li>
+                                        <li className='d-flex align-items-center'><i><RiShoppingBagLine size={18} /></i> Product & Jewellery Films</li>
+                                        <li className='d-flex align-items-center'><i><RiMovie2Line size={18} /></i> Corporate, Fashion & Event Promos</li>
+                                        <li className='d-flex align-items-center'><i><RiBriefcaseLine size={18} /></i> Podcasts & Educational Content</li>
                                     </ul>
                                 </div>
-                                <div className="hero-btns">
-                                    <Link href="/portfolio" className="theme-btn">View Our Work <i><RiPlayCircleLine size={16} /></i> </Link>
-                                    <Link href="/contact" className="theme-btn outline-btn ml-3">Get a Quote</Link>
+                                <div className="hero-btns mt-3">
+                                    <Link href="/works" className="theme-btn mx-2">See Our Work <i><RiPlayCircleLine size={16} /></i> </Link>
+                                    <a href="tel:+919071855089" className="theme-btn outline-btn ml-3">Call +91 90718 55089</a>
                                 </div>
-                            </div>
-                        </SlideUp>
-                        <SlideUp>
-                            <div className="trusted-by mt-4">
-                                <p className="small text-muted mb-2">TRUSTED BY</p>
-                                <PartnersMarquee />
                             </div>
                         </SlideUp>
                     </div>

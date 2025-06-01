@@ -6,8 +6,8 @@ import CallToAction from "@/components/sections/callToAction";
 import Footer from "@/components/sections/footer";
 
 export const metadata = {
-  title: "Bentos - Personal Portfolio Next.js Template",
-  description: "Bentos - Personal Portfolio React Template",
+  title: "Visual Line Studios - Video Production Bengaluru | Hospital, Jewellery & Product Ads",
+  description: "Visual Line Studios is a leading video production company in Sahakara Nagar, Bengaluru. We create hospital videos, doctor interviews, jewellery ads, product launch films, and more. Elevate your brand with cinematic content for YouTube, Instagram, and Facebook.",
 };
 
 export default function RootLayout({ children }) {
