@@ -43,6 +43,7 @@ export async function GET() {
     if (!res.ok) throw new Error('Failed to fetch sheet');
     const text = await res.text();
     const rows = parseCSV(text);
+    console.log('Fetched rows:', rows);
 
     // Group by client
     const clientGroups = new Map();
