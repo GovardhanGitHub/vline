@@ -32,6 +32,8 @@ function processVideoRow(row, index) {
   };
 }
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     // Replace with your actual sheet ID
