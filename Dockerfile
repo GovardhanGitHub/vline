@@ -5,7 +5,7 @@ FROM base AS deps
 WORKDIR /app
 # Install dependencies
 COPY package.json ./
-COPY bun.lockb* ./
+# COPY bun.lockb* ./
 RUN bun install
 
 # Rebuild the source code only when needed
