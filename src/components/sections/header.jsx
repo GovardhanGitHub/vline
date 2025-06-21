@@ -39,7 +39,7 @@ const Header = () => {
                             Visual Line Studios
                         </div>
                         {/* Hamburger and phone for mobile, all in one row */}
-                        <div className="d-flex align-items-center ms-auto" style={{gap:'0.3rem',flex:'0 0 auto'}}>
+                        <div className<=>"d-flex align-items-center ms-auto" style={{gap:'0.3rem',flex:'0 0 auto'}}>
                             <a href="tel:+919071855089" className="theme-btn phone-btn d-none d-lg-inline-block" style={{fontWeight:'bold',fontSize:'0.95em',padding:'4px 8px',background:'#fff',color:'#eb5d3a',border:'2px solid #eb5d3a',borderRadius:'8px',whiteSpace:'nowrap',marginRight:'0.3rem',position:'absolute',right:0,top:'50%',transform:'translateY(-50%)'}}>+91 90718 55089</a>
                             <a href="tel:+919071855089" className="theme-btn phone-btn d-inline-block d-lg-none" style={{fontWeight:'bold',fontSize:'0.95em',padding:'4px 8px',background:'#fff',color:'#eb5d3a',border:'2px solid #eb5d3a',borderRadius:'8px',whiteSpace:'nowrap',marginRight:'0.3rem'}}>+91 90718 55089</a>
                             <button type="button" className="navbar-toggle d-inline-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#main-navbar-collapse" style={{background:'none',border:'none',padding:'0 6px',fontSize:'1.7rem',lineHeight:'1',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',height:'36px',cursor:'pointer'}} aria-label="Toggle navigation">
