@@ -14,17 +14,17 @@ const Hero = () => {
                     <div className="col-lg-4">
                         <SlideUp>
                             <div className="about-image-part">
-                                <img src={"/images/main_photo_pic.jpg"} alt="Visual Line Studios" />
+                                <img src={"/images/image.png"} alt="Visual Line Studios" />
                                 <h2>Visual Line Studios</h2>
                                 <p className="fw-bold">Bengaluru’s Creative Video Production Studio</p>
-                                <div className="about-social text-center">
+                                {/* <div className="about-social text-center">
                                     <ul>
                                         <li><Link href=""><RiFacebookCircleFill size={20} /></Link></li>
                                         <li><Link href=""><RiTwitterXLine size={20} /></Link></li>
                                         <li><Link href=""><RiInstagramLine size={20} /></Link></li>
                                         <li><Link href=""><RiVimeoLine size={20} /></Link></li>
                                     </ul>
-                                </div>
+                                </div> */}
                             </div>
                         </SlideUp>
                     </div>
