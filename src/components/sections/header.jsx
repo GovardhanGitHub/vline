@@ -35,7 +35,7 @@ const Header = () => {
                 <div className="container">
                     <div className="header-inner d-flex align-items-center justify-content-between flex-nowrap" style={{minHeight:'52px',padding:'6px 0',position:'relative'}}>
                         {/* Brand name instead of logo */}
-                        <div className="brand-name d-flex align-items-center" style={{fontWeight:'bold',fontSize:'1.3rem',whiteSpace:'nowrap',letterSpacing:'1px',color:'#eb5d3a',flex:'0 0 auto'}}>
+                        <div className="brand-name d-flex align-items-center" style={{fontWeight:'bold',fontSize:'1.3rem',whiteSpace:'nowrap',letterSpacing:'1px',color:'white',flex:'0 0 auto'}}>
                             Visual Line Studios
                         </div>
                         {/* Hamburger and phone for mobile, all in one row */}

@@ -2,6 +2,11 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package.json package-lock.json ./
+# Check internet connectivity before installing anything
+RUN wget -q --spider http://google.com || (echo "No internet access" && exit 1)
+# Install ping utility for Alpine
+RUN apk add --no-cache iputils
+RUN ping -c 4 google.com
 RUN npm ci
 COPY . .
 RUN npm run build
