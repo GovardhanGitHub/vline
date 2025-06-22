@@ -1,6 +1,10 @@
 services:
-  prod:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: nextjs-bun-app
     image: nextjs-bun-app
     ports:
-      - 31033:3000
+      - "31033:3000"
+    restart: unless-stopped
